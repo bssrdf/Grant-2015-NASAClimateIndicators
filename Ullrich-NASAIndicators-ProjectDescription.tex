@@ -89,7 +89,7 @@ Dr. Colin Zarzycki (Co-I) \\
 
 This research proposal targets \textbf{NASA Strategic Research Objectives} (ROSES-2014) ``\textit{Climate Indicators and Data Products for Future National Climate Assessments}.''  This proposal incorporates aspects of both \textit{Climate Indicators}, by developing and improving indicators based on characteristics of extreme weather events, and \textit{Assessment capabilities and products}, by supporting the development of a new software pipeline for the analysis of data sets and model output.
 
-\paragraph{Overview:}  The next century will see unprecedented changes to the climate system, in turn expected to drive changes to the characteristics of meteorological extremes. These changes will have direct impact on populations throughout the United States: As stated by third National Climate Assessment (NCA), ``changes in extreme weather and climate events, such as heat waves and droughts, are the primary way that most people experience climate change.'' The characteristics of extreme weather are key climate indicators, and addressing observed (lagging) and projected (leading) changes in these quantities will be important across multiple sectors, in multiple regions, and highly useful input to future NCAs.  This project will address the pressing need for a better understanding of changing extremes, including tropical cyclones (TCs), extratropical cyclones (ETCs), atmospheric blocks, atmospheric rivers, temperature extremes and precipitation extremes. 
+\paragraph{Overview:}  The next century will see unprecedented changes to the climate system, in turn expected to drive changes to the characteristics of meteorological extremes. These changes will have direct impact on populations throughout the United States: As stated by third National Climate Assessment (NCA), ``changes in extreme weather and climate events, such as heat waves and droughts, are the primary way that most people experience climate change.'' The characteristics of extreme weather are key climate indicators, and addressing observed (lagging) and projected (leading) changes in these quantities will be important across multiple sectors, in multiple regions, and highly useful input to future NCAs.  This project will address the pressing need for a better understanding of changing extremes, including tropical cyclones (TCs), extratropical cyclones (ETCs), atmospheric blocks, atmospheric rivers (ARs), temperature extremes and precipitation extremes. 
 
 \paragraph{Objectives / Tasks:}  The \textbf{central objective} of this proposal the provision of an assessment of trends in the \textbf{characteristics of extreme weather events} observed over the past century.  The \textbf{secondary objective} of this proposal is to provide a new \textbf{assessment capability} in the form of an \textbf{automated pipeline for detection and characterization of extreme weather events}.  These objectives are expanded as four research tasks: 
 \begin{itemize}
@@ -135,7 +135,7 @@ Tropical cyclones (TCs) are severe storms originating in warm, tropical, ocean b
 
 %TCs are referred to regionally as tropical storms, hurricanes (Western Hemisphere) and typhoons (West Pacific). In other locales, they are also called cyclones or cyclonic storms. 
 
-{\color{red}[Detection and Characterization of TCs?]}
+%{\color{red}[Detection and Characterization of TCs?]}
 
 Key sectors affected by tropical cyclones include energy, urban environments and transportation, primarily via infrastructural vulnerability.  Regions affected by TCs include the southwest, southeast and northeast, particularly along the coasts.
 
@@ -148,13 +148,11 @@ Formally, atmospheric blocking is a meteorological phenomenon defined by an anti
 {\color{red}[What about the blocking indicator papers?]}
 No prior analysis has examined trends in atmospheric blocking based on tracking and characterizing discrete blocking episodes, and existing work that uses diagnosed dynamical quantities are largely limited to a single dataset of characterization.  In \cite{croci2007multifaceted}, ERA-40 reanalysis was used to document an observed decrease in blocking over Greenland and the North Pacific.  Others have claimed that the duration of blocking events and associated heat waves may increase under global warming \citep{lupo1997climatological, beniston20042003}.  However, recent work by \cite{barnes2012methodology} observed that, using 500mb wind speed as an indicator and data from the CMIP5 dataset, duration of blocks remained roughly constant whereas frequency decreased.  \cite{dandrea1998northern} compared atmospheric blocking events from 15 atmospheric general circulation models and found that models at the time tended to underestimate both blocking frequency and the average duration of blocks.
 
-Past studies also do not address how the characteristics of general blocking events have been modified (or will be modified) by anthropogenic influences, and cannot provide a statistical assessment of how much the extreme heat wave events of the past decade can be attributed to human-induced changes.  The proposed work will assess trends in blocking from a number of datasets, using multiple dynamical indicators, and will use large-ensemble experiments to attribute changes in blocking to human influences.
-
 %The proposed work also leverages a large ensemble of previously unavailable climate simulations which are consistent with the observed and pre-industrial climate, and so has the potential to address the scientific questions in a rigorous statistical manner.
 
 Key sectors affected by atmospheric blocking include water, energy, agriculture and human health.  In particular, persistent weather conditions caused by atmospheric blocks can affect precipitation patterns and lead to increases in local and regional air pollution.  Within the US, the northwest, southwest and Alaska are strongly affected by Pacific blocks which can redirect precipitation from the Pacific away from the coast.  The Great Plains, midwest, northeast and southeast are also affected by omega blocks, which are responsible for a range of extreme weather phenomena such as tornadoes and winter storms.
 
-Key characteristics include intensity (for instance measured by the strength of the anomaly), duration, genesis location and track.
+Key characteristics include intensity (for instance measured by the strength of the anomaly), lifetime, genesis location and track.
 
 \subsubsection*{Extratropical Cyclones (ETCs)}
 
@@ -170,13 +168,21 @@ Key characteristics include wind intensity, radius of maximum wind, precipitatio
 
 \subsubsection*{Atmospheric Rivers (ARs)}
 
-Atmospheric rivers are meteorological phenomena characterized by long, narrow plumes of increased atmospheric moisture stretching between the subtropics and the midlatitudes regions.  These features are responsible for 30\%-50\% of total US west coast precipitation, particularly during winter months, and 30\%-40\% of total seasonal snow water \citep{dettinger2011atmospheric}.  The majority of total seasonal snow water contribution from ARs will often occur as a result of 1-2 extreme AR events \citep{guan2010extreme}.  ARs are usually between 400 to 600\ km wide, and so at global model resolutions of $1^\circ$ are mostly unresolved, occupying as few as four grid cells in the latitudinal direction.
+ARs are meteorological phenomena characterized by long, narrow plumes of increased atmospheric moisture stretching between the subtropics and the midlatitudes regions \citep{ralph2011storms}.  These features are responsible for 30\%-50\% of total US west coast precipitation, particularly during winter months, and 30\%-40\% of total seasonal snow water \citep{dettinger2011atmospheric, warner2012wintertime}.  ARs are usually between 400 to 600\ km wide, and so at global model resolutions of $1^\circ$ are mostly unresolved, occupying as few as four grid cells in the latitudinal direction.  Those ARs with highest moisture content and strongest winds can induce extreme rainfall and can lead to flooding.  Notable AR events include the 2010 ``Snowmageddon'' event \citep{halverson2010mega}, responsible for record-breaking snowfall in the US northwest and the 1986 February atmospheric river that resulted in 13 fatalities, 50,000 people displaced by flooding and \$400 million dollars in damage \citep{leung2009atmospheric}.
 
-{\color{red}[Atmospheric river literature]}
+%{\color{red} Make sure to cite Ralph and }
 
-Key sectors affected by atmospheric rivers include water, energy and agriculture, particularly due to deposition of precipitation along the US West Coast.
+%doi: 10.1111/j.1752-1688.2011.00546.x  - 7 model ensemble of historical climate and future climate simulations, showing no change in average AR statistics, but a significant change in extremes:  years with many AR episodes increase, ARs with higher water vapor content increase, peak season for ARs will lengthen
 
-Key characteristics include precipitation intensity and point of landfall.
+%doi: 10.3390/w3020445  - California is very variable, and appearance of ARs can lead to drought or flooding conditions
+
+%doi: 10.1002/2014GL060299  - with short lead times weather forecasting models perform well at predicting ARs over central US, but not skillful at 7 days.
+
+%{\color{red}[Atmospheric river literature]}
+
+Key sectors affected by atmospheric rivers include water, energy and agriculture, particularly for their role in the water cycle along the US West Coast, but these features are nonetheless relevant throughout the US.
+
+Key characteristics include wind speed, total column integrated water vapor, precipitation intensity and point of landfall.
 
 \subsubsection*{Extreme Heat Events (EHEs)}
 
@@ -240,7 +246,7 @@ The fifth Climate Model Intercomparison Project (CMIP5) represents a major inter
 
 \subsection{Methods} \label{sec:Methods}
 
-This proposal will investigate and intercompare detection criteria for extreme weather events to identify the best algorithm for automated detection to identify relevant characteristics.  The capability to address such a wide array of extremes hinges on the TempestExtremes software package, a new suite of flexible detection and characterization algorithms developed by the PI for processing large climate datasets. This package uses an algorithmic framework known as ``MapReduce'' to first detect candidate events at individual times using specified criteria. Stitching is then used to assess the evolution of related detections over time. The result is an objective calculation of the climate indicator that can be automated and parallelized for multiple datasets.
+This proposal will investigate and intercompare detection criteria for extreme weather events to identify the best algorithm for automated detection and characterization.  The capability to address such a wide array of extremes hinges on the TempestExtremes software package, a new suite of flexible detection and characterization algorithms developed by the PI for processing large climate datasets. This package uses an algorithmic framework known as ``MapReduce'' to first detect candidate events at individual times using specified criteria. Stitching is then used to connect spatially connected detections over time. The result is a catalog of extreme weather events and associated characteristics (here treated as climate indicators) that can be automated and parallelized for multiple datasets.
 
 \subsubsection{Tropical cyclones and extratropical cyclones}
 
@@ -269,7 +275,7 @@ In TempestExtremes, detection of both ETCs and TCs is handled by first searching
 %\hline
 %\end{tabular}
 \end{center}
-\caption{Extratropical cyclone counts from a 20-year CLIVAR climatological simulation, as obtained by selecting only pressure minima that (a) do not have an upper level warm core, (b) are within 4 degrees of a vorticity maximum, (c) are present over topography of maximum elevation 1500\ m, (d) are persistent for at least 2 days, (e) increase in pressure by  at least 0.1\ hPa over a distance of 1 degree in all directions, and (f) are in the latitude interval [90S, 20S] or [20N, 90N].} \label{fig:BlockingDetection}
+\caption{Extratropical cyclone counts from a 20-year CLIVAR climatological simulation, as obtained by selecting only pressure minima that (a) do not have an upper level warm core, (b) are within 4 degrees of a vorticity maximum, (c) are present over topography of maximum elevation 1500\ m, (d) are persistent for at least 2 days, (e) increase in pressure by  at least 0.1\ hPa over a distance of 1 degree in all directions, and (f) are in the latitude interval [90S, 20S] or [20N, 90N].} \label{fig:DensityPlot}
 \end{figure}
 
 \begin{figure}[p]
@@ -284,11 +290,15 @@ In TempestExtremes, detection of both ETCs and TCs is handled by first searching
 
 \subsubsection{Atmospheric blocks}
 
-Blocks must also be tracked in time to verify persistence, requiring the use of the two-pronged approach that underlies the MapReduce algorithm.  Various algorithms have been developed for the identification of blocking events in atmospheric model data \citep{tibaldi1990operational, wiedenmann2002climatology, pelly2003new, scherrer2006two, tyrlis2008aspects, barriopedro2010application, barnes2012methodology}, and most of these approaches use either geopotential height, 500mb velocity or potential vorticity as indicators (with a variety of thresholds).  However, robust algorithmic detection of atmospheric blocking events has been particularly difficult due to the fact that atmospheric blocking manifests in many different forms \citep{haby2008blocking}, such as Rex Blocks, Omega Blocks, etc.  Notably, the focus of the majority of past studies has also been on Euro-Atlantic blocking.  Consequently, it is anticipated that global detection of blocking events will require a multi-pronged approach.  In order to manage all sets of input data, a combination of processing methods using Python scripts and C++ will be used for handling of reanalysis data and CESM output.  Idealized tests to verify correct behavior of this algorithm will use the idealized baroclinic instability test with potential vorticity tracer proposed by \cite{JPWCJJKRBR2013QJRMS}.  Each detection algorithm will be applied to the reanalysis datasets to determine which formulation provides the most robust approach for detection of both northern hemisphere and southern hemisphere blocking events.  Preliminary results showing regions of anti-cyclonic column-integrated potential vorticity (PV) anomalies using a detection approach analogous to \cite{scherrer2006two} are shown in Figure \ref{fig:BlockingDetection}.
+Various algorithms have been developed in the literature for the identification of blocking events in atmospheric model data \citep{tibaldi1990operational, wiedenmann2002climatology, pelly2003new, schwierz2004perspicacious, scherrer2006two, tyrlis2008aspects, barriopedro2010application, barnes2012methodology}, and most of these approaches use either geopotential height, 500mb velocity or potential vorticity as indicators (with a variety of thresholds).  However, robust algorithmic detection of atmospheric blocking events has been particularly difficult due to the fact that atmospheric blocking manifests in many different forms \citep{haby2008blocking}, such as Rex Blocks, Omega Blocks, etc.  Notably, the focus of the majority of past studies has also been on Euro-Atlantic blocking, with only a few studies assessing atmospheric blocking over North America.  Assessing blocking indices over North America will be a major focus of this proposal.
+
+%Consequently, it is anticipated that global detection of blocking events will require a multi-pronged approach.  In order to manage all sets of input data, a combination of processing methods using Python scripts and C++ will be used for handling of reanalysis data and CESM output.  Idealized tests to verify correct behavior of this algorithm will use the idealized baroclinic instability test with potential vorticity tracer proposed by \cite{JPWCJJKRBR2013QJRMS}.  Each detection algorithm will be applied to the reanalysis datasets to determine which formulation provides the most robust approach for detection of both northern hemisphere and southern hemisphere blocking events.  Preliminary results showing regions of anti-cyclonic column-integrated potential vorticity (PV) anomalies using a detection approach analogous to \cite{scherrer2006two} are shown in Figure \ref{fig:BlockingDetection}.
 
 \subsubsection{Atmospheric rivers}
 
-This proposal will develop, implement and analyze automated atmospheric river detection and characterization for understanding AR events in the variable-resolution data \citep{ralph2004satellite, lavers2012detection}.  The characterization of atmospheric rivers will be based on \cite{neiman2008meteorological} and \cite{guan2010extreme}, who use column-integrated water vapor to identify filamentary structures over the eastern Pacific.  The capability to detect these structures will utilize technology from the TempestExtremes software package, a new suite of flexible detection and characterization algorithms developed by the PI for processing large climate datasets.  AR structures will be agglomerated in space using a graph traversal algorithm, and then connected in time by determining overlaps in detections at adjacent time points.  Discrete AR events will then be characterized in terms of point of landfall and total associated precipitation (rainfall and snowfall).  Statistics will then be computed on these quantities including proportion of precipitation associated with AR events, frequency of AR events and mean spatial point of landfall.  This information will then be used for addressing both sensitivity of AR events to grid resolution (using 110km, 28km and 14km datasets) and changes to AR events under future climatology.
+Algorithms for detection of atmospheric rivers generally rely on the basic definitions of ARs \citep{ralph2011storms}, relying on detection of (a) an integrated column water vapor of 2 cm, (b) wind speeds greater than 12.5 m/s in the lowest 2 km and (c) a long, narrow shape of length at least 2000 km and width less than 1000 km.  This basic definition is typically augmented algorithmically via image processing techniques such as edge detection, for identifying the structure of the event \citep{wick2013description}.  Other algorithms include \cite{zhu1998proposed, bao2006interpretation, dirmeyer2007characterization, gimeno2010origin, lavers2012detection}.   Notably, detection algorithms have had some difficulty assessing point of landfall, possibly attributed to insufficient model resolution \citep{wick2014implementation}.
+
+%{\color{red} [More here]}
 
 \subsubsection{Temperature extremes}
 
@@ -310,30 +320,31 @@ This task seeks to implement and analyze several algorithmic approaches for the 
 
 %To support future assessment capabilities, this project further seeks to integrate the TempestExtremes package in the NASA Earth Exchange (NEX) to allow for high-throughput analysis of submitted datasets from other NEX users.
 
-\subsubsection{(T1) Detection and characterization of ARs, Heat and Precip.}
+\subsubsection{(T1) Implementation of new detection and characterization algorithms}
 
-This research task will implement detection and characterization algorithms for atmospheric rivers, heat extremes and precipitation extremes in TempestExtremes.
+This research task will focus on the implementation and testing of several new detection and characterization algorithms in the TempestExtremes framework, augmenting the existing set of  algorithms.
 
-\begin{tabular}{ccc}
-\hline Extreme & Methods & Status \\
-\hline ETCs and TCs & Various SLP-based & {\color{green} Implemented} \\
-Blocking & \cite{scherrer2006two}, \cite{pelly2003new} & {\color{green} Implemented} \\
-ARs & \cite{neiman2008meteorological} & {\color{red} To be implemented} \\
-Heat & ? & {\color{red} To be implemented} \\
-Precip. & ? & {\color{red} To be implemented} \\
-\hline
-\end{tabular}
+\paragraph{ETCs and TCs:}  A flexible algorithmic framework has already been developed for ETCs and TCs, as described in section \ref{sec:Methods}.  No additional modifications are planned as part of this proposal.
+
+\paragraph{Atmospheric Blocks:}  Two methods for blocking detection have already been implemented in TempestExtremes:  specifically, \cite{schwierz2004perspicacious}, using column integrated potential vorticity, and \cite{pelly2003new}, using a blocking indicator based on Rossby wave overturning.  We will augment these algorithms with methods based on \cite{tibaldi1990operational} that uses the gradient of geopotential height to detect flow reversal.
+
+\paragraph{Atmospheric Rivers:}  This proposal aims to implement the method of \cite{jiang2014intermediate}, which is based off of the definition of \cite{ralph2004satellite} and incorporates a number of modern features of AR detection algorithms.  AR structures will be agglomerated in space using a graph traversal algorithm, and then connected in time by determining overlaps in detections at adjacent time points.
+
+\paragraph{Heat Extremes:}  {\color{red} [More needed]}
+
+\paragraph{Precipitation Extremes:}  {\color{red} [More needed]}
 
 \subsubsection{(T2) Assessment of lagging indicators}
 
-The climate indicator focus of this proposal will assess past trends in the characteristics of extreme weather events that have been enumerated in section \ref{sec:ExtremeWeather}.  NASA reanalysis products described in section \ref{sec:Datasets} will be key to assess past changes, including the Modern Era Retrospective-analysis for Research and Applications (MERRA) and North American Regional Reanalysis (NARR) (for all extreme events), NASA Earth Exchange (NEX) Downscaled Climate Projections, Daymet reanalysis (for temperature and precipitation extremes) and PRISM precipitation data (for precipitation extremes).
+The climate indicator focus of this proposal will assess past trends in the characteristics of extreme weather events that have been enumerated in section \ref{sec:ExtremeWeather}.  NASA reanalysis products described in section \ref{sec:Datasets} will be key to assess past changes, including the Modern Era Retrospective-analysis for Research and Applications (MERRA) and North American Regional Reanalysis (NARR) (for all extreme events), Daymet reanalysis (for temperature and precipitation extremes) and PRISM precipitation data (for precipitation extremes).
 
 \paragraph{Tropical Cyclones:}  Atmospheric reanalysis data (MERRA and CFSR) will be used in conjunction with the International Best Track Archive for Climate Stewardship (IBTrACS) tropical cyclone best track database \citep{Knapp2010} to assess the performance of commonly-used tracking parameter combinations. Sensitivity tests which perturb the thresholds used to define tropical cyclones in climate data will be completed to assess whether or not the storm detection process is highly sensitive to the choice of specific criteria.
 
 \paragraph{Extratropical Cyclones:}  Accurate detection of ETCs over high topography remains an outstanding question that will be studied with this work.  Again a number of approaches will be studied and tuned using a suite of reanalysis data, and verified using multiple datasets and a visual intercomparison.  In particular, we will verify that historically relevant extratropical storms are correctly detected and characterized by the algorithm.
 
-\paragraph{Atmospheric Blocks:}  This proposal aims to compare two algorithmic approaches for identifying and characterizing atmospheric blocking events.
+\paragraph{Atmospheric Blocks:}  This proposal aims to compare the three algorithmic approaches for identifying and characterizing atmospheric blocking events and determine any trends associated with block intensity (for instance, measured in terms of potential vorticity anomaly if using the indicator of \cite{schwierz2004perspicacious}), lifetime, genesis location and track.
 
+\paragraph{Atmospheric Rivers:}  Discrete AR events will be characterized in terms of point of landfall and total associated precipitation (rainfall and snowfall), analogous to characterizations of \cite{neiman2008meteorological} and \cite{guan2010extreme}.  Statistics will then be computed on these quantities including proportion of precipitation associated with AR events, frequency of AR events and mean spatial point of landfall.  MERRA and CFSR data will be used for this assessment.
 
 \subsubsection{(T3) Assessing Human-Induced Climate Change}
 
@@ -344,6 +355,8 @@ As part of the Climate of the 20th Century (C20C) project, 100 climate simulatio
 This proposal will apply an analogous detection procedure on the ensemble of ``world that could have been'' simulations.  Since this second set of simulations arise from a world without anthropogenic forcing, differences in the statistics of blocking events and ETCs can be effectively attributed to anthropogenic drivers.  Consequently, this study aims to look at how the statistics of blocking events have changed under human influence (such a study is known as detection and attribution).
 
 The results of this task would also provide enlightenment on specific atmospheric events of the past (other such studies include \cite{stott2004human} and \cite{pall2011anthropogenic}).  Namely, it would address questions such as ``what was the probability of the 1993 Storm of the Century in a world with and without anthropogenic forcing?''  Statistically significant differences between the probability in the forced and unforced simulations in 1993 would lead to conclusions on the influence of human activity on the likelihood of these events.  The large ensemble (50 members) that will be leveraged as part of this project is necessary in order to provide accurate statistics on relatively infrequent events such as these, and so this proposal is uniquely positioned to answer these questions.
+
+%Past studies also do not address how the characteristics of general blocking events have been modified (or will be modified) by anthropogenic influences, and cannot provide a statistical assessment of how much the extreme heat wave events of the past decade can be attributed to human-induced changes.  The proposed work will assess trends in blocking from a number of datasets, using multiple dynamical indicators, and will use large-ensemble experiments to attribute changes in blocking to human influences.
 
 %\subsubsection{(T4) Assessment of leading indicators (future change)}
 
