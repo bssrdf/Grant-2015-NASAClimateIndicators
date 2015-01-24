@@ -1,0 +1,161 @@
+% Upper-case    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+% Lower-case    a b c d e f g h i j k l m n o p q r s t u v w x y z
+% Digits        0 1 2 3 4 5 6 7 8 9
+% Exclamation   !           Double quote "          Hash (number) #
+% Dollar        $           Percent      %          Ampersand     &
+% Acute accent  '           Left paren   (          Right paren   )
+% Asterisk      *           Plus         +          Comma         ,
+% Minus         -           Point        .          Solidus       /
+% Colon         :           Semicolon    ;          Less than     <
+% Equals        =           Greater than >          Question mark ?
+% At            @           Left bracket [          Backslash     \
+% Right bracket ]           Circumflex   ^          Underscore    _
+% Grave accent  `           Left brace   {          Vertical bar  |
+% Right brace   }           Tilde        ~
+
+%
+% NSF Biographical Sketch: Dr. Theodore P. Pavlic
+%
+% Copyright (c) 2013 by Theodore P. Pavlic
+% All rights reserved.
+%
+
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\renewcommand\thesection{(\alph{section})}
+\renewcommand\thesubsection{(\alph{subsection})}
+
+\usepackage{calc}
+
+\usepackage{lastpage}
+%\newcommand{\pageoflastpage}{Page {\thepage} of \pageref*{LastPage}}
+%\newcommand{\pageoflastpage}{{\thepage} of \pageref*{LastPage}}
+\newcommand{\pageoflastpage}{}
+
+% Redefine the plain pagestyle for the title page
+\makeatletter
+\let\oldps@plain\ps@plain
+\renewcommand{\ps@plain}{\oldps@plain%
+\renewcommand{\@evenfoot}{\hfil\pageoflastpage\hfil}%
+\renewcommand{\@oddfoot}{\@evenfoot}}
+\makeatother
+
+% Use fancy for non-title pages
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\cfoot{\pageoflastpage}
+\pagestyle{fancy}
+
+\usepackage{xspace}
+
+\usepackage[shortlabels]{enumitem}
+\usepackage{graphicx}
+\usepackage{varioref}
+\usepackage[%
+        colorlinks=true,urlcolor=,
+        pdfpagelabels=true,hypertexnames=true,
+        plainpages=false,naturalnames=true,
+        ]{hyperref}
+%
+\usepackage{url}
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newlist{bibsection}{itemize}{3}
+\setlist[bibsection]{label=,leftmargin={\bibhang+\widthof{[9]}},%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+        topsep=0pt}
+\newlist{bibenum}{enumerate}{3}
+\setlist[bibenum]{label=\textbf{\arabic*.},leftmargin={\bibhang+\widthof{[999]}},%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+        topsep=0pt}
+\let\oldendbibenum\endbibenum
+\def\endbibenum{\oldendbibenum\vspace{-.6\baselineskip}}
+\let\oldendbibsection\endbibsection
+\def\endbibsection{\oldendbibsection\vspace{-.6\baselineskip}}
+\makeatother
+
+\title{%
+        \vspace{-2\baselineskip}
+            \normalsize
+            Biographical Sketch\\
+            {\normalsize\textbf{Dr. Colin M. Zarzycki}}\\
+            \vspace{0.5\baselineskip}
+            \hrule
+            \vspace{0.5\baselineskip}
+            Advanced Study Program (ASP), Climate and Global Dynamics Division (CGD)\\
+            National Center for Atmospheric Research (NCAR),
+            E-mail: \href{mailto:zarzycki@ucar.edu}{zarzycki@ucar.edu},
+            Phone: (303) 497-1381
+        \vspace{-1.5ex}
+        }
+\date{}
+\author{}
+
+\newcommand{\ie}{i.e.\xspace}
+\newcommand{\eg}{e.g.\xspace}
+
+\begin{document}
+
+\maketitle
+\vspace{-4\baselineskip}
+
+\subsection*{Education}
+
+    Cornell University, Ithaca, NY;
+        Earth and Atmospheric Science;
+        B.S., 2008
+        \\
+    University of Illinois, Urbana, IL;
+        Civil and Environmental Engineering;
+        M.S., 2010
+        \\
+    University of Michigan, Ann Arbor, MI;
+        Atmospheric, Oceanic, and Space Sciences;
+        Ph.D., 2014
+
+\subsection*{Appointments}
+
+\begin{itemize}[label={\quad 9999--9999:},leftmargin=*,itemsep=0pt]
+
+    \item[2014--present:]
+        \textbf{Advanced Study Program (ASP) Postdoctoral Fellow},
+        National Center for Atmospheric Research,
+        Boulder, CO
+
+    \item[2014:]
+        \textbf{Postdoctoral Researcher},
+        University of Michigan,
+        Ann Arbor, MI
+
+\end{itemize}
+
+\subsection*{Recent publications}
+
+\begin{bibenum}[itemsep=0pt]
+\item {\bf Colin M. Zarzycki}, Christiane Jablonowski, Diana R. Thatcher, Mark A. Taylor (2015), ``Effects of localized grid refinement on general circulation and climatology in the Community Atmosphere Model.'' {\em J. Clim}, in press.
+\item Kevin J.E. Walsh, [...], {\bf Colin M. Zarzycki}, {\it et al.}, (2014), ``Hurricanes and climate: the U.S. CLIVAR working group on hurricanes.'' {\em B. Am. Meteorol. Soc.}, in press. \href{http://dx.doi.org/10.1175/BAMS-D-13-00242.1}{doi:10.1175/BAMS-D-13-00242.1}.
+\item {\bf Colin M. Zarzycki}, Christiane Jablonowski (2014), ``A multidecadal simulation of Atlantic tropical cyclones using a variable-resolution global atmospheric general circulation model.'' {\em J. Adv. Model. Earth Syst.}, {\bf6}(3), 805--828, \href{http://dx.doi.org/10.1002/2014MS000352}{doi:10.1002/2014MS000352}.
+\item {\bf Colin M. Zarzycki}, Michael N. Levy, Christiane Jablonowski, Mark A. Taylor, James Overfelt, Paul A. Ullrich (2014), ``Aquaplanet experiments using CAM's variable-resolution dynamical core.'' {\em J. Clim.}, {\bf27}(14), 5481--5503, \href{http://dx.doi.org/10.1175/JCLI-D-14-00004.1}{doi:10.1175/JCLI-D-14-00004.1}.
+\item {\bf Colin M. Zarzycki}, Christiane Jablonowski, Mark A. Taylor (2014), ``Using variable-resolution meshes to model tropical cyclones in the Community Atmosphere Model.'' {\em Mon. Wea. Rev.}, {\bf142}(3), 1221--1239,  \href{http://dx.doi.org/10.1175/MWR-D-13-00179.1}{doi:10.1175/MWR-D-13-00179.1}.
+\item Tami C. Bond, {\bf Colin Zarzycki}, Mark G. Flanner, Dorothy M. Koch (2011), ``Quantifying immediate radiative forcing by black carbon and organic matter with the Specific Forcing Pulse'', {\em Atmos. Chem. Phys.}, {\bf11}, 1505--1525, \href{http://dx.doi.org/10.5194/acp-11-1505-2011}{doi:10.5194/acp-11-1505-2011}.
+\item {\bf Colin M. Zarzycki}, Tami C. Bond (2010), ``How much can the vertical distribution of black carbon affect its global direct radiative forcing?'', {\em Geophys. Res. Lett.}, {\bf37}, L20807, \href{http://dx.doi.org/10.1029/2010GL044555}{doi:10.1029/2010GL044555}. 
+\end{bibenum}
+
+\subsection*{Synergistic Activities}
+
+Co-convener and chair of sessions at both American and European Geophysical Union Annual Meetings; Reviewer for Journal of Climate, Journal of Geophysical Research-Atmospheres, Journal of Advances in Modeling the Earth System, Science of the Total Environment, Michigan Journal of Sustainability; Member of the NCAR Thompson Lecture Series Committee.
+
+%\subsection*{Collaborators \& Co-authors}
+
+\end{document}

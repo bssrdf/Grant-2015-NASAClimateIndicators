@@ -1,0 +1,99 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 1.0 (1/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} 
+%\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+
+%\usepackage{charter} % Use the Charter font for the document text
+
+\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
+\includegraphics[width=1.2\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
+\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newlfmP{noLines}
+\newlfmP{sigsize=50pt,sigtr=scansig} % Slightly decrease the height of the signature field
+
+%% Not 100% sure why this works -- sigtr appears to force this to exist.
+\makesignature{scansig}{\newsavebox{\Sigx}
+\sbox{\Sigx}{\includegraphics[scale=.75]{sig.pdf}}
+        \closeline{Sincerely,}%
+        \signature{\usebox{\Sigx}}%
+        \signame{Colin Zarzycki}%
+        }
+ 
+%\newlfmP{addrfromphone} % Print a phone number under the sender's address
+%\newlfmP{addrfromemail} % Print an email address under the sender's address
+%\PhrPhone{Phone} % Customize the "Telephone" text
+%\PhrEmail{Email} % Customize the "E-mail" text
+
+\lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\namefrom{Colin Zarzycki} % Name
+
+\addrfrom{
+\today\\[8pt] % Date
+Colin Zarzycki \\
+Advanced Study Program Postdoctoral Fellow \\
+National Center for Atmospheric Research \\ % Address
+P.O. Box 3000 \\
+Boulder, CO 80307
+}
+
+\emailfrom{zarzycki@ucar.edu} % Email address
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING/CLOSING
+%----------------------------------------------------------------------------------------
+
+%\greetto{Dear Dr. Zhang and other members of the search committee,} % Greeting text
+
+%\nameto{Dr. Guifu Zhang} % Addressee of the letter above the to address
+%\addrto{
+%The School of Meteorology \\
+%University of Oklahoma \\
+%120 David L. Boren Blvd. \\
+%Norman, OK 73072 
+%}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+I acknowledge that I am identified by name as Co-Investigator to the investigation entitled ``TempestExtremes: Indicators of change in the characteristics of extreme weather,'' that is submitted by Dr. Paul Ullrich to the NASA Research Announcement NNH14ZDA001N-INCA, and that I intend to carry out all responsibilities identified for me in this proposal. I understand that the extent and justification of my participation as stated in this proposal will be considered during peer review in determining in part the merits of this proposal. I have read the entire proposal, including the management plan and budget, and I agree that the proposal correctly describes my commitment to the proposed investigation. For the purposes of conducting work for this investigation, my participating organization is the National Center for Atmospheric Research.
+
+%\closing{Yours faithfully,\\
+%\fromsig{\includegraphics[scale=1]{sig.pdf}} \\
+%\fromname{Your name}
+%}
+
+%----------------------------------------------------------------------------------------
+
+\end{newlfm}
+\end{document}
