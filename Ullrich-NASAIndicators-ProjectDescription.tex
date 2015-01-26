@@ -110,11 +110,7 @@ This research proposal targets \textbf{NASA Strategic Research Objectives} (ROSE
 
 \subsubsection{Central Theme: Discrete Extreme Weather Events}
 
-According to the Intergovernmental Panel on Climate Change (IPCC), since 1980 annual losses from extreme weather events have ranged from several billion to over 200 billion.  Weather-related disasters have also caused a significant loss of human life over the past century, including nearly 500,000 deaths from the Bhola Cyclone in Bangladesh (1970), over 1,000,000 deaths from the 1931 central China floods, and 70,000 deaths from the European heat wave of 2003.  Consequently, we argue that an understanding of how extreme weather events have changed as a consequence of human influence is a pressing requirement of any climate assessment.
-
 This proposal targets a broad class of regional-scale \textbf{extreme weather} events that appear in climate datasets, with a particular emphasis on the North American continent.  These events include both ``nodal'' features with a specific geographic location, such as the sea-level pressure minimum associated with extratropical cyclones and tropical cyclones, and features ``areal'' features, including atmospheric rivers, atmospheric blocks, heat waves and precipitation extremes.  All events have both a spatial location / extent and a temporal component, including a distinct start and end time.  Extreme weather events include both propagating events (those that gradually change spatial position over time) and stationary events.  The \textbf{climate indicators} targeted by this proposal are the characteristics of these features, and are itemized in section \ref{sec:ExtremeWeather}.
-
-The advantage of considering multiple extreme weather events under a single umbrella allows for analysis and identification of connections between these phenomena.  For instance, atmospheric blocking in the Eastern Pacific is responsible for redirecting atmospheric rivers, which in turn leads to a modification of precipitation patterns, a potential driver for a drought event.
 
 \subsubsection{Central Theme: Big Data}
 
@@ -122,17 +118,17 @@ Over the past century there has been an explosive growth in the number of meteor
 
 \subsubsection{Impact}
 
+According to the Intergovernmental Panel on Climate Change (IPCC), since 1980 annual losses from extreme weather events have ranged from several billion to over 200 billion.  Weather-related disasters have also caused a significant loss of human life over the past century, including nearly 500,000 deaths from the Bhola Cyclone in Bangladesh (1970), over 1,000,000 deaths from the 1931 central China floods, and 70,000 deaths from the European heat wave of 2003.  Consequently, we argue that an understanding of how extreme weather events have changed as a consequence of human influence is a pressing requirement of any climate assessment.
 
+The assessment extreme weather characteristics that is the focus of this work will augment existing studies that have only targeted specific types of extreme weather event or have only dealt with singular datasets.  The advantage of considering multiple event types under a single umbrella allows for analysis and identification of connections between these phenomena.  For instance, atmospheric blocking in the Eastern Pacific is responsible for redirecting atmospheric rivers, which in turn leads to a modification of precipitation patterns.  The use of multiple datasets and the development of a pipeline for data analysis will improve our statistical confidence in observed trends and provide a mechanism for scientists to rapidly analyze new climate datasets.
 
-\subsubsection{Relevance}
+\subsubsection{Relevance for NASA}
 
-%The TECA toolset \citep{PORSBKWFLMWWB2012PCS} aims to meet this need, although there is an outstanding need to develop the capacity of this toolset to answer questions on real meteorological phenomena.
+This project aims to fill in many of the gaps that exist within the last National Climate Assessment (NCA) associated with extreme weather events, and improve our confidence in reported trends for existing extreme weather studies.  The development of a climate data analysis pipeline for extreme weather will position NASA as a cornerstone agency for the analysis of climate data from national and international sources, and will assist in the analysis of future climate data products produced from future NASA missions.
 
 %\subsubsection{Global Impact}
 
 %This proposal aims to not only build on the previous work of the international community via integration of internationally developed datasets, but also aims to have a broad global impact.  Blocking events have been particularly disastrous throughout Europe and Russia in the past several decades (especially from the 2003 European heat wave and 2010 Russian heat wave), and global change threatens to worsen these events.  Extratropical cyclones have also been devastating, especially in northern Europe and the British Isles, but major storms associated with extratropical cyclones have also caused significant damage to New Zealand (1968) and Uruguay (2005).  Since this work focuses on leveraging high-throughput data analysis methods for global climate data, it is natural to consider these extreme events from a global perspective.  The results of this work will be shared with international collaborators in Europe and beyond, and will aid in developing effective mitigation and adaptation strategies against changing climate events.
-
-%\subsubsection{Relevance}
 
 
 \subsection{Extreme Weather Events, Sectors, Regions, and Indicators} \label{sec:ExtremeWeather}
@@ -263,9 +259,7 @@ The vast majority of existing TC detection algorithms identify storms on a time-
 
 Detection algorithms for ETCs have been proposed by \cite{wang2006climatology, wernli2006surface, raible2008northern} and others (see, for example, the review paper by \cite{ulbrich2009extra}) using a procedure analogous to that of TCs.  As shown by \cite{neu2013imilast} as part of the IMILAST project, ETC counts can vary by up to an order of magnitude depending on the choice of detection algorithm, even when only considering a single reanalysis dataset.  When controlling for the detection algorithm, significant differences were also observed between reanalysis datasets by \cite{hodges2003comparison}, \cite{wang2006climatology} and \cite{raible2008northern}.  These studies motivate the need for a comprehensive approach that considers a suite of detection algorithms and datasets in order to draw conclusions on the character of ETCs.
 
-In TempestExtremes, detection of both ETCs and TCs is handled by first searching for minima in the sea-level pressure field.  Thresholds can then be specified on the pointwise Laplacian of pressure, maximum or minimum latitude and topographic height at the point of detection.  Additional criteria are also available, including requirement or elimination of candidates based on the presence of a warm core aloft (detected as a maximum in the temperature field at 200hPa and 500hPa within a specified distance), the presence of a relative vorticity maximum within a specified distance, or the presence of a closed pressure contour.  Once candidate storms have been identified, stitching of candidates to form cyclone tracks is performed.  The stitching algorithm provides options for distance between candidate points in time, minimum track duration, minimum distance between begin and endpoint, minimum path length, as well as other user-specified thresholds on quantities such as windspeed or surface pressure.  The stitching algorithm also provides an option for identifying trajectories with detection gaps, for example when candidates are present at times 1,2,3,5,6, and 7.  These criteria amalgamate a wide range of detection and stitching algorithms specified in the literature, including those criteria discussed above.
-
-%Preliminary results from TECA using a composite scheme and ETC density plot are shown in Figure \ref{fig:ETCDetection} for a sample CESM CLIVAR dataset.
+In TempestExtremes, detection of both ETCs and TCs is handled by first searching for minima in the sea-level pressure field.  Thresholds can then be specified on the pointwise Laplacian of pressure, maximum or minimum latitude and topographic height at the point of detection.  Additional criteria are also available, including requirement or elimination of candidates based on the presence of a warm core aloft (detected as a maximum in the temperature field at 200hPa and 500hPa within a specified distance), the presence of a relative vorticity maximum within a specified distance, or the presence of a closed pressure contour.  Once candidate storms have been identified, stitching of candidates to form cyclone tracks is performed.  The stitching algorithm provides options for distance between candidate points in time, minimum track duration, minimum distance between begin and endpoint, minimum path length, as well as other user-specified thresholds on quantities such as windspeed or surface pressure.  The stitching algorithm also provides an option for identifying trajectories with detection gaps, for example when candidates are present at times 1,2,3,5,6, and 7.  These criteria amalgamate a wide range of detection and stitching algorithms specified in the literature, including those criteria discussed above.  A plot of ETC densities for one possible configuration is depicted in Figure \ref{fig:DensityPlot}.
 
 %Recently, the IMILAST project \citep{neu2013imilast} has been conceived as a grand-scale international intercomparison effort of ETC detection algorithms.  Although all of the detection algorithms were run on the ERA-Interim dataset, dramatic variability was observed between total counts of ETCs over the analysis period by different algorithms.  Consistency between detection methods was observed to occur largely for deep, strong ETCs.  These results again suggest that detection of ETCs may require a comprehensive approach that uses multiple detection criteria to identify candidate storms.  This proposal will also extend upon the work of IMILAST by studying the capability of detection algorithms to successfully detect and characterize ETCs in NCEP reanalysis, 20th Century reanalysis and alternative climatologies, all of which are expected to be more representative of typical CESM simulation results.  This proposal will further compare how ETC statistics differ between these datasets, and whether climate signals are robust across ETC detection algorithms.
 
@@ -326,7 +320,7 @@ This task seeks to implement and analyze several algorithmic approaches for the 
 
 %To support future assessment capabilities, this project further seeks to integrate the TempestExtremes package in the NASA Earth Exchange (NEX) to allow for high-throughput analysis of submitted datasets from other NEX users.
 
-\subsubsection{(T1) Implementation of new detection and characterization algorithms}
+\subsubsection{(T1) Implementation of new detection and characterization algorithms} \label{sec:T1}
 
 This research task will focus on the implementation and testing of several new detection and characterization algorithms in the TempestExtremes framework, augmenting the existing set of  algorithms.
 
@@ -340,9 +334,9 @@ This research task will focus on the implementation and testing of several new d
 
 \paragraph{Precipitation Extremes:}  {\color{red} [More needed]}
 
-\subsubsection{(T2) Assessment of lagging indicators}
+\subsubsection{(T2) Assessment of lagging indicators} \label{sec:T2}
 
-The climate indicator focus of this proposal will assess past trends in the characteristics of extreme weather events that have been enumerated in section \ref{sec:ExtremeWeather}.  This will be the first comprehensive study of discrete extreme weather events in reanalysis data, and will lead to a catalogue of events and associated characteristics.  Reanalysis products, as described in section \ref{sec:Datasets} will be key to assess past changes, including the Modern Era Retrospective-analysis for Research and Applications (MERRA), CFSR, ERA-Interim and North American Regional Reanalysis (NARR) (for all extreme events), Daymet (for temperature and precipitation extremes) and PRISM precipitation data (for precipitation extremes).  CMIP5 hindcast simulations will be used to determine if observed trends in the characteristics of extremes also appear in standalone climate model simulations with prescribed SSTs.  In addition, the following special topics will be tackled by this work:
+The climate indicator focus of this proposal will assess past trends in the characteristics of extreme weather events that have been enumerated in section \ref{sec:ExtremeWeather}.  This will be the first comprehensive study of discrete extreme weather events in reanalysis data, and will lead to a catalogue of events and associated characteristics.  Reanalysis products, as described in section \ref{sec:Datasets} will be key to assess past changes, including the Modern Era Retrospective-analysis for Research and Applications (MERRA), CFSR, ERA-Interim and North American Regional Reanalysis (NARR) (for all extreme events), Daymet (for temperature and precipitation extremes) and PRISM precipitation data (for precipitation extremes).  CMIP5 hindcast simulations will be used to determine if observed trends in the characteristics of extremes also appear in standalone climate model simulations with prescribed SSTs.  This project will also require the development of a pre-processing codebase that is capable of transforming input climate data into a single standard compatible with TempestExtremes.  In addition, the following special topics will be tackled by this work:
 
 \paragraph{Tropical Cyclones:}  Atmospheric reanalysis data (MERRA and CFSR) will be used in conjunction with the International Best Track Archive for Climate Stewardship (IBTrACS) tropical cyclone best track database \citep{Knapp2010} to assess the performance of commonly-used tracking parameter combinations. Sensitivity tests which perturb the thresholds used to define tropical cyclones in climate data will be completed to assess whether or not the storm detection process is highly sensitive to the choice of specific criteria.
 
@@ -367,7 +361,7 @@ The climate indicator focus of this proposal will assess past trends in the char
 
 %{\color{red}[More work needed here]} This task aims to perform the first comprehensive study of blocking events and ETCs in historical reanalyses data, including the NCEP, ERA-40, MERRA and C20C datasets.  Using the detection algorithms developed in Task 1, this proposal aims to determine historical counts of blocking events / ETCs and differences between the event characteristics obtained from each reanalysis dataset.  A particular focus in this analysis will be given to extreme value statistics (how does the return time of extreme blocking events vary by region), which are associated with blocking events / ETCs that have the potential for the most socioeconomic damage.  Properties specific to blocking events that will be considered include intensity, duration, classification, return time and associated weather.  Those specific to ETCs include wind intensity (in terms of vorticity, minimum sea-level pressure or gradient of sea-level pressure), radius of maximum winds, intensity of precipitation, latitude of genesis point, latitude of termination and probability of transit beyond a given latitude.  This task will tackle the question of how these characteristics can be filtered from each dataset once a successful detection has been obtained.  To do so, this work will rely on both past surveys of event characteristics \citep{serreze1995climatological}, as well as building an understanding of the general features of ETCs in historical reanalysis data.
 
-\subsubsection{(T3) Assessing Human-Induced Climate Change (Attribution)}
+\subsubsection{(T3) Assessing Human-Induced Climate Change (Attribution)} \label{sec:T3}
 
 The question of the influence human activity on the frequency and magnitude of extreme weather events of the past decade has remained largely unanswered.  To address this question, this proposal will apply the TempestExtremes suite of detection and characterization algorithms to the ensemble of ``world that was'' and ``world that could have been'' simulations from the C20C (see section \ref{sec:Datasets}).  By contrasting extreme weather events within these two datasets, anthropogenic influences can be separated from natural variability. These ensemble runs enlarge the statistical sample of extreme events, which are inherently rare. These data can be further used to analyze the time series of observation-based historical data and improve estimates of probability / frequency distributions for extreme events with specific characteristics.
 
@@ -381,7 +375,7 @@ The results of this task would also provide enlightenment on specific atmospheri
 
 %\subsubsection{(T4) Assessment of leading indicators (future change)}
 
-\subsubsection{(T4) Integration of the Extreme Weather Pipeline in NEX}
+\subsubsection{(T4) Integration of the Extreme Weather Pipeline in NEX} \label{sec:T4}
 
 \begin{figure}
 \begin{center}
@@ -394,44 +388,38 @@ We propose the integration of the TempestExtremes detection and characterization
 
 The software associated with this proposal will be implemented using C++.  Execution of the code will be performed on NASA's computing systems via the NEX interface.
 
-\subsubsection{Visualization}
+%\subsubsection{Visualization}
 
 %\subsubsection{Future Efforts}
 
 %Two options are available for providing projections of future change: static climatologies produced via Climate Variability and Predictability (CLIVAR) experiments under doubled atmospheric CO$_2$ and/or increased sea-surface temperatures, and dynamic climatologies obtained from the CMIP5 multi-model multi-ensemble database.
 
-\section{Timetable of Activities and Management Plan} \label{sec:Timeline}
+\subsection{Management Plan and Timetable of Activities} \label{sec:Timeline}
 
-Each of the graduate student researchers involved in this project will work on two of the atmospheric features presented in this proposal, although it is anticipated that there will be substantial collaboration on the technical level.  PI Ullrich will be in charge of coordinating software development and ensuring that this work meets the necessary software engineering guidelines.  The approximate timeline of the research component of this proposal is as follows:
+PI Ullrich will provide leadership for this project and coordinate activities for atmospheric blocks and ARs.  Co-PI Grotjahn will coordinate activities for temperature and precipitation extremes and provide advisement on activities for atmospheric blocks.  Co-I Zarzycki will coordinate activities for TCs, and will provide advisement on activities for ETCs.  PI Ullrich will also be in charge of coordinating software development and ensuring that this work meets the necessary software engineering guidelines.  Each of the graduate student researchers involved in this project will work on three of the atmospheric features presented in this proposal, although it is anticipated that there will be substantial collaboration on the technical level.  Communication between partners will be managed via telecon, one annual meeting at UC Davis between all project members, and once annually at the American Geophysical Union Fall Meeting.
 
-The first year will be dedicated towards development of detection and characterization algorithms (Task 1 and 2), debugging of the suite of detection tools and post-processing of reanalysis data to ensure compatibility with TECA.  After an initial understanding of these phenomena has been developed, construction of the idealized test cases will begin (Task 3).  The second year will focus on validation and verification of the toolset, including detection and correlation of heat wave events and atmospheric blocks, and evaluation of model performance relative to reanalysis data (Task 4).  During this year work will also begin on the detection and attribution study, using the CESM ensemble data at all resolutions to verify consistency with the reanalysis data and the development of idealized test cases (Task 5).  Work on using CLIVAR ensemble datasets to predict changes in ETCs and blocking events during Year 2, including investigation of tropical cyclones undergoing the extratropical transition (Task 6).  The third year will focus on the IPCC/CMIP5 datasets to determine future predictions on how the qualities of atmospheric blocking events will be modified by the changing climate (Task  6).  This timeline is summarized in Table \ref{tab:ExpectedTimeline}.
+The approximate timeline of the research component of this proposal is as follows:  The first year will be dedicated towards the development of new detection and characterization algorithms (section \ref{sec:T1}).  Characterization and assessment of trends in these indicators is the major focus of this project, and will cover a 2.5 year period (section \ref{sec:T2}).  This task involves assessments of reanalysis data, gridded data and CMIP5 hindcast data.  The attribution study (section \ref{sec:T3}) will be carried out beginning in year 2 and will proceed through the beginning of year 3.  Finally, NEX integration (section \ref{sec:T4}) will be carried over the last half of the project as the codebase converges on a specific suite of algorithms.  This timeline is summarized in Table \ref{tab:ExpectedTimeline}.
 
 \begin{table}
 \begin{tabular}{c||c|c|c|c||c|c|c|c||c|c|c|c|}
 & \multicolumn{4}{c}{Year 1} & \multicolumn{4}{c}{Year 2} & \multicolumn{4}{c}{Year 3}  \\
-  \hline
+\hline
          & 1st & 2nd & 3rd & 4th & 1st & 2nd & 3rd & 4th  & 1st & 2nd & 3rd & 4th \\
 \hline
 \hline
-Detection algorithm dev. & \cellcolor{red!35} & \cellcolor{red!35} & \cellcolor{red!35} & \cellcolor{red!35} & & & & & & & &  \\
+(T1) Detection algorithm dev. & \cellcolor{red!35} & \cellcolor{red!35} & \cellcolor{red!35} & \cellcolor{red!35} & & & & & & & &  \\
 \hline
-Characterization dev. & \cellcolor{blue!35} & \cellcolor{blue!35} & \cellcolor{blue!35} & \cellcolor{blue!35} & & & & & & & &  \\
+(T2) Characterization / indicators  & \cellcolor{green!35} & \cellcolor{green!35} & \cellcolor{green!35} &  \cellcolor{green!35}  & \cellcolor{green!35} & \cellcolor{green!35} & \cellcolor{green!35} & \cellcolor{green!35} & \cellcolor{green!35} & \cellcolor{green!35} & & \\
 \hline
-Reanalysis data  & \cellcolor{cyan!35} & \cellcolor{cyan!35} & \cellcolor{cyan!35} &  \cellcolor{cyan!35}  & \cellcolor{cyan!35} & \cellcolor{cyan!35} & & & & & & \\
+(T3) Attribution Study & & & & & \cellcolor{blue!35} & \cellcolor{blue!35} & \cellcolor{blue!35} &  \cellcolor{blue!35}  & \cellcolor{blue!35} & \cellcolor{blue!35} & & \\
 \hline
-Validation / Verification  & & & & & \cellcolor{red!35} & \cellcolor{red!35} & \cellcolor{red!35} &  \cellcolor{red!35}  & & & & \\
+(T4) NEX Integration  & & & & & & & \cellcolor{cyan!35} &  \cellcolor{cyan!35}  & \cellcolor{cyan!35} & \cellcolor{cyan!35} & \cellcolor{cyan!35} &  \cellcolor{cyan!35} \\
 \hline
-Detection / Attribution & & & & & \cellcolor{blue!35} & \cellcolor{blue!35} & \cellcolor{blue!35} &  \cellcolor{blue!35}  & \cellcolor{blue!35} & \cellcolor{blue!35} & & \\
-\hline
-Predictive study (static)  & & & & & & & \cellcolor{cyan!35} &  \cellcolor{cyan!35}  & \cellcolor{cyan!35} & \cellcolor{cyan!35} & \cellcolor{cyan!35} &  \cellcolor{cyan!35} \\
-\hline
-Predictive study (dynamic)  & & & & & & & & & \cellcolor{green!35} & \cellcolor{green!35} & \cellcolor{green!35} &  \cellcolor{green!35} \\
-  \hline
 \end{tabular}
 \caption{Expected timeline of (split in quarters for each year) for all major activities.} \label{tab:ExpectedTimeline}
 \end{table}
 
-We anticipate that multiple major peer-reviewed publications will arise from this work, addressing the studies of detection, attribution and prediction. Further, this work will be presented at major scientific meetings, including the annual meetings for the American Meteorological Society, the European Geophysical Union and the American Geophysical Union.  A final report will be developed as part of this proposal summarizing the conclusions drawn from this work along with advice for future work that could target model improvements in CESM, and possible future research directions.
+We anticipate that multiple major peer-reviewed publications will arise from this work, addressing the studies of detection, attribution and prediction. Further, this work will be presented at major scientific meetings, including the annual meetings for the American Meteorological Society, the Americal Geophysical Union, and the International Association of Meteorology and Atmospheric Sciences.  A final report will be developed as part of this proposal summarizing the conclusions drawn from this work along with advice for future research directions.
 
 \clearpage
 
