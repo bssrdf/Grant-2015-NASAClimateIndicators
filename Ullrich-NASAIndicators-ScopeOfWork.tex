@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{natbib}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{comment}
+\usepackage{color}
+
+\oddsidemargin 0cm
+\evensidemargin 0cm
+
+\usepackage[margin=1in]{geometry}
+
+\parindent 0cm
+\parskip 0.5cm
+
+\usepackage{fancyhdr}
+\pagestyle{plain}
+%\fancyhf{}
+%\fancyhead[L]{AOSS Reference Sheet}
+%\fancyhead[CH]{test}
+\fancyfoot[C]{Page \thepage}
+
+\newcommand{\vb}{\mathbf}
+\newcommand{\diff}[2]{\frac{d #1}{d #2}}
+\newcommand{\diffsq}[2]{\frac{d^2 #1}{{d #2}^2}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pdiffsq}[2]{\frac{\partial^2 #1}{{\partial #2}^2}}
+\newcommand{\topic}{\textbf}
+\newcommand{\arcsinh}{\mathrm{arcsinh}}
+\newcommand{\arccosh}{\mathrm{arccosh}}
+\newcommand{\arctanh}{\mathrm{arctanh}}
+
+\begin{document}
+
+\textbf{Title:} TempestExtremes: Indicators of change in the characteristics of extreme weather
+
+\textbf{PI:} Dr. Paul Ullrich, Department of Land, Air and Water Resources, UC Davis
+
+\textbf{Co-PI:}  Dr. Richard Grotjahn, Department of Land, Air and Water Resources, UC Davis
+
+\textbf{Co-I:} Dr. Colin Zarzycki, National Center for Atmospheric Research
+
+%Please enter a brief description of the proposal that provides the following information:
+
+%A description of the key, central objectives of the proposal in terms understandable to a nonspecialist;
+%A concise statement of the methods/techniques proposed to accomplish the stated research objectives; and
+%A statement of the perceived significance of the proposed work to the objectives of the solicitation and to NASA interests and programs in general.
+
+\section{Scope of Work}
+This project shall quantify climate change effects on a broad set of extreme weather events, including tropical cyclones (TCs), extratropical cyclones (ETCs), atmospheric blocks, atmospheric rivers, temperature extremes and precipitation extremes. Key characteristics include, for TCs and ETCs, wind / precipitation intensity and spatial distribution of tracks; for blocks, intensity, duration and location; for atmospheric rivers, precipitation intensity and point of landfall. This work will emphasize regional and local-scale changes in extreme events.
+
+\paragraph{Deliverables:}  This project will provide an assessment of changes in many characteristics of extreme weather events.  Under this umbrella we include an assessment from key NASA datasets, plus two projects "assessing human-induced climate change" and "projecting future change", described below.  To support future assessment capabilities, this project further seeks to integrate the TempestExtremes package in the NASA Earth Exchange (NEX) to allow for high-throughput analysis of submitted datasets from other NEX users.
+
+\paragraph{Research Tasks:}  This project is software-driven and requires the analysis of readily available climate datasets.  The project incorporates the following research tasks:
+
+\begin{itemize}
+\item[(T1)] Implement expanded functionality for detection and characterization of atmospheric blocks, atmospheric rivers, extreme temperature and extreme precipitation events in the extreme weather detection/characterization framework TempestExtremes.
+
+\item[(T2)] Assess differences in new and existing detection and characterization algorithms.  Using reanalysis and model data, provide a comprehensive assessment of past changes in the characteristics of these extremes.
+
+\item[(T3)] Using large ensemble simulations from the Climate of the 20th Century (C20C) project, determine how the characteristics of extreme weather events under historical climate simulations differ from hypothetical climate simulations with preindustrial greenhouse gas concentrations.
+
+\item[(T4)] Through the NASA Earth Exchange (NEX), provide scientists with the capability for automatic analysis of datasets using a suite of detection and characterization algorithms. 
+\end{itemize}
+
+\end{document}
